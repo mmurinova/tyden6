@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {box-sizing: border-box;}
+*, ::after, ::before {box-sizing: inherit;}
+
+body {
+    background-color: #FAFAFA;
+    font-family: Montserrat;
+}
+
+p {
+    max-width: 460px;
+    font-size: 16px;
+    color: #8B8B8B;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+hr {
+    border: 1px solid #407BFF;
+    width: 60px;
+    margin-bottom: 30px;
+}
+
+.dobro {
+    background-color: #407BFF;
+    border: #407BFF;
+    margin-bottom: 10px;
+}
+
+.pohoda {
+    background-color: #8B8B8B;
+    border: #8B8B8B;
+}
+
+.hlavicka {
+    text-align: center;
+}
+
+.button {
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.box img {
+    margin: 20px;
+}
+
+.uvodni {
+    max-width: 100%;
+    margin: 60px 75px 40px 75px;
+    text-align: center;
+}
+
+.box p {
+    font-size: 13px;
+    margin: 0;
+    text-align: left;
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+
+.uvodni img {
+    max-width: 100%;
+}
+
+.posledni {
+    margin-bottom: 60px;
+}
+
+.box {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: #407BFF1F 4px 6px 10px;
+    margin: 15px 20px;
+    align-items: center;
+}
+
+
+/*obrazovka nad 640px*/
+
+
+@media screen and (min-width: 640px) {
+    .uvodni {
+        margin-bottom: 30px;
+    }
+    
+    .button {
+        display: inline;
+    }
+
+    .dobro {
+        margin-right: 20px;
+    }
+
+    .sluzby {
+        display: flex;
+        flex: 1 1 calc(100% / 3);
+        justify-content: space-evenly;
+    }
+
+    h2 {
+        margin-top: 80px;
+    }
+
+    p {
+        max-width: 550px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+
+    .sluzby {
+        display: flex;
+        flex: 1 1 calc(100% / 3);
+        justify-content: space-evenly;
+    }
+
+    .box {
+        margin: 0px 10px;
+        display: block;
+        text-align: center;
+    }
+
+    .box p {
+        text-align: center;
+        margin: 20px 15px;
+    }
+
+    .box img {
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    .lidi {
+        margin-bottom: 80px;
+    }
+
+    .last {
+        margin-bottom: 0px;
+    }
+}
+
+/*obrazovka nad 1000px*/
+
+@media screen and (min-width: 1100px) { 
+    
+    .jedna {
+        flex-direction: row-reverse;
+    }
+    section {
+        max-width: 1040px;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    .dobro {
+        margin-right: 20px;
+    }
+
+   
+    p,
+    .hlavicka {
+        text-align: left;
+    }
+
+    hr {
+        margin-left: 0;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .sluzby {
+        max-width: 550px;
+    }
+
+    h1,
+    h2,
+    hr {
+        text-align: left;
+    }
+
+    .cesta,
+    .place {
+        max-width: 430px;
+    }
+
+    .dva {
+        flex-direction: row-reverse;
+    }
+
+    .box {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .last {
+        margin-right: 0;
+    }
+
+    .tri {
+        margin-bottom: 60px;
+    }
+
+    .hlavicka {
+        margin-left: 0;
+        margin-right: auto;
+        width: 490px;
+    }
+
+    .uvodni {
+        width: 490px;
+        margin: 60px 0 0 auto;
+    }
+
+    .uvodni img {
+        max-width: 425px;
+        text-align: center;
+    }
+
+    
+}
